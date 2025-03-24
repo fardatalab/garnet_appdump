@@ -35,7 +35,7 @@ namespace Resp.benchmark
         volatile bool done = false;
         long total_ops_done = 0;
 
-        static AppLogger logger;
+        AppLogger logger;
 
 
         public RespPerfBench(Options opts, int Start, IConnectionMultiplexer redis)
