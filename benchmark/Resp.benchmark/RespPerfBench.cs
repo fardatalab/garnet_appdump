@@ -35,14 +35,14 @@ namespace Resp.benchmark
         volatile bool done = false;
         long total_ops_done = 0;
 
-        AppLogger logger;
+        static AppLogger logger;
 
 
         public RespPerfBench(Options opts, int Start, IConnectionMultiplexer redis)
         {
             this.opts = opts;
             this.Start = Start;
-            this.logger = new AppLogger("curr_log.txt");
+            logger = new AppLogger("curr_log.txt");
             if (opts.Client == ClientType.SERedis)
                 this.redis = redis;
         }
