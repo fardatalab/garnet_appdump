@@ -1,4 +1,0 @@
-[submodule "AppDump"]
-	path = AppDump
-	url = https://github.com/fardatalab/AppDump.git
-	branch = dev-kai
