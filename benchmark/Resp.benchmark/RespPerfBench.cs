@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using Garnet.client;
 using Garnet.common;
 using StackExchange.Redis;
-using AppDump;
+using AppDumpV2;
 
 namespace Resp.benchmark
 {
